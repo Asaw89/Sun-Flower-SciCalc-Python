@@ -13,12 +13,22 @@ def displayResult(x: float):
 
 def performCalcLoop(calc):
     while True:
-        choice = input("Operation? ")
+        choice = input("What Do You Want? ")
         if choice == 'q':
             break  # user types q to quit calulator.
-        elif choice == 'add':
+        elif choice == 'addition':
             a, b = getTwoNumbers()
-            displayResult(calc.add(a, b))
+            displayResult(calc.addition(a, b))
+        elif choice == 'subtraction':
+            a, b = getTwoNumbers()
+            displayResult(calc.subtraction(a, b))
+        elif choice == 'division':
+            a, b = getTwoNumbers()
+            displayResult(calc.division(a, b))
+        elif choice == 'multiplication':
+            a, b = getTwoNumbers()
+            displayResult(calc.multiplication(a, b))
+            
         else:
             print("That is not a valid input.")
 
