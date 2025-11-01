@@ -10,3 +10,7 @@ class Calculator:
         return 0
 
 # add lots more methods to this calculator class.
+    def sine(self, x):
+        if self.trig_units == "degrees":
+            x = math.radians(x)
+        return math.sin(x)
