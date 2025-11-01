@@ -7,7 +7,23 @@ class Calculator:
         return x + y
 
     def sub(self, x, y):
-        return 0
+        return x - y
+    
+    def div(self, x, y):
+        return x / y
+    
+    def multi(self, x, y):
+        return x * y
+    
+    def square(self, x):
+        return x * x
+    
+    def expo(self, x, y):
+        return x ** y
+    
+    def inverse(self, x):
+        return 1/x
+
 
 # add lots more methods to this calculator class.
     def sine(self, x):
