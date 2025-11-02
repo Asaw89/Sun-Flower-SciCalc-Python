@@ -10,9 +10,11 @@ class Calculator:
         return x - y
     
     def div(self, x, y):
-        return x / y
+        if y == 0:
+            return ("error")
+            return x / y
     
-    def multi(self, x, y):
+    def mul(self, x, y):
         return x * y
     
     def square(self, x):
@@ -23,6 +25,13 @@ class Calculator:
     
     def inverse(self, x):
         return 1/x
-
+    
+    def squareroot(self, x):
+        if x < 0:
+            return ("error")
+        return pow(x, 0.5)
+    
+    def clear():
+        return 0
 
 # add lots more methods to this calculator class.
