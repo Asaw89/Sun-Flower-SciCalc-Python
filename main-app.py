@@ -13,7 +13,7 @@ def getOneNumber():
 
 def displayResult(x: float):
     print()
-    print(x, "\n")
+    print(result, "\n")
 
 def performCalcLoop(calc):
     state = 0
