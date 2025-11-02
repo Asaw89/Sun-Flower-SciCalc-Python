@@ -24,9 +24,19 @@ class Calculator:
     def inverse(self, x):
         return 1/x
 
-
 # add lots more methods to this calculator class.
     def sine(self, x):
         if self.trig_units == "degrees":
             x = math.radians(x)
         return math.sin(x)
+    
+    def cosine(self,x):
+        if self.trig_units == "degrees":
+            x = math.radians(x)
+        return math.cosine(x)
+    
+    def tangent(self, x):
+        if self.trig_units == "degrees":
+            x = math.radians(x)
+        return math.tan(x)
+    
