@@ -1,4 +1,5 @@
 from calculator import Calculator
+from customFeaturs import CustomFeatures
 
 
 def getTwoNumbers():
@@ -10,17 +11,25 @@ def getTwoNumbers():
 def displayResult(x: float):
     print(x, "\n")
 
+def performCalcLoop(calc):
+    while True:
+        choice = input("Operation? ")
+        if choice == 'q':
+            break  # user types q to quit calulator.
+        elif choice == 'asin':
+            num = input("Enter a nunber for inverse sine")
+            result = calc.inverse_sine(float(num))
+            print(result)
 
 def performCalcLoop(calc):
     while True:
         choice = input("Operation? ")
         if choice == 'q':
             break  # user types q to quit calulator.
-        elif choice == 'add':
-            a, b = getTwoNumbers()
-            displayResult(calc.add(a, b))
-        else:
-            print("That is not a valid input.")
+        elif choice == 'math.factorial':
+            num = input("Enter a nunber for inverse sine")
+            result = calc.factorial(float(num))
+            print(result)
 
 
 # main start
